@@ -1,0 +1,37 @@
+
+package Pilas;
+
+import java.awt.Color;
+import java.util.Random;
+
+/**
+ *
+ * @author MUNDODaniel
+ */
+public class Herramientas {
+
+Random random = new Random();
+
+
+    public Color getColor(){
+        int sd = random.nextInt(6);
+        switch(sd){
+        case 0: return Color.orange;
+                
+        case 1: return Color.CYAN;
+                
+        case 2: return Color.DARK_GRAY;
+                
+        case 3: return Color.MAGENTA;
+                
+        case 4: return Color.PINK;
+                
+        case 5: return Color.RED;
+                
+        default: break;
+        }
+         return Color.WHITE;
+    }
+   
+    
+}
